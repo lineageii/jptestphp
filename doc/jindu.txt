@@ -1,0 +1,25 @@
+2011/07/31
+用户注册ＳＴＡＲＴ
+http://localhost/phptest/registerIndex.php
+
+main-register-o.js
+方法
+registerComplete
+	checkform.js
+	方法
+	regeditClick
+
+我确认个人信息正确无误 按钮
+main-register-o.js.confirmreg
+
+2011/08/03
+用户注册ＯＫ
+用户显示ＳＴＡＲＴ
+
+用户资料修改
+用户照片上传
+
+用户支付
+
+220183198910182688
+miyagi

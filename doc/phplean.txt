@@ -1,0 +1,16 @@
+db配置
+/server/db.php
+
+<?php
+$dbinfo = array (
+  'host' => 'localhost',
+  'user' => 'root',
+  'pass' => '',
+  'name' => 'phptest',
+);
+?>
+
+使用方法
+include 'db.php'
+echo $dbinfo['host'];
+
