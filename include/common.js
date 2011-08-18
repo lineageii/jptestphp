@@ -52,7 +52,7 @@ function showkdinfo(a) {
     if (a == "") {
         a = getrequest("kdid")
     }
-    window.open("kdinfo.do?kdid=" + a, "detail", "scrollbars=auto,resizable=yes,width=530,height=350")
+    window.open("http://jlpt.etest.net.cn/kdinfo.do?kdid=" + a, "detail", "scrollbars=auto,resizable=yes,width=530,height=350")
 }
 function getrequest(d) {
     var b = window.location.href;

@@ -340,9 +340,7 @@ ul li {
     <div id="personalInfo">
       <div class="sectiontitle"><span
 
-	style="font-size: 12px; float: right; font-weight: normal;">[
-        <label onclick="gotoURL('reginfo.php');" class="link" onmouseover="this.className='hover'" onmouseout="this.className='link'">修改个人信息</label>
-        ]</span>个人信息</div>
+	style="font-size: 12px; float: right; font-weight: normal;"></div>
       <div class="profilephoto"> <img name="ksImgSrc" alt="个人照片" src="#" /> </div>
       <div style="font-size: 12px; float: left; font-weight: normal; margin-top:10px; width:280px;">
         <table cellpadding="0">
@@ -436,9 +434,7 @@ ul li {
     <div id="personalInfo">
       <div class="sectiontitle"><span
 
-	style="font-size: 12px; float: right; font-weight: normal;">[
-        <label onclick="gotoURL('reginfo.php');" class="link" onmouseover="this.className='hover'" onmouseout="this.className='link'">修改个人信息</label>
-        ]</span>个人信息</div>
+	style="font-size: 12px; float: right; font-weight: normal;"></div>
       <div class="profilephoto"> <img name="ksImgSrc" alt="个人照片" src="#" /> </div>
       <div style="font-size: 12px; float: left; font-weight: normal; margin-top:10px; width:280px;">
         <table cellpadding="0">
@@ -520,9 +516,7 @@ ul li {
     <div id="personalInfo">
       <div class="sectiontitle"><span
 
-	style="font-size: 12px; float: right; font-weight: normal;">[
-        <label onclick="gotoURL('reginfo.php');" class="link" onmouseover="this.className='hover'" onmouseout="this.className='link'">修改个人信息</label>
-        ]</span>个人信息</div>
+	style="font-size: 12px; float: right; font-weight: normal;"></div>
       <div class="profilephoto"> <img name="ksImgSrc" alt="个人照片" src="#" /> </div>
       <div style="font-size: 12px; float: left; font-weight: normal; margin-top:10px; width:280px;">
         <table cellpadding="0">
@@ -619,9 +613,7 @@ ul li {
     <div id="personalInfo">
       <div class="sectiontitle"><span
 
-	style="font-size: 12px; float: right; font-weight: normal;">[
-        <label onclick="gotoURL('reginfo.php');" class="link" onmouseover="this.className='hover'" onmouseout="this.className='link'">修改个人信息</label>
-        ]</span>个人信息</div>
+	style="font-size: 12px; float: right; font-weight: normal;"></div>
       <div class="profilephoto"> <img name="ksImgSrc" alt="个人照片" src="#" /> </div>
       <div style="font-size: 12px; float: left; font-weight: normal; margin-top:10px; width:280px;">
         <table cellpadding="0">
@@ -700,10 +692,10 @@ ul li {
                   </tr>
                   <tr align="left" id="changeKd" style="display: none; background-color:#f4f9ff">
                     <td colspan="2" nowrap> 提示：如果未能成功更改考点，系统仍保留您目前的预定座位。
-                      <input class="btn" type="button" onclick="changeKD();" value="更改考点" onmousemove="this.className='btnmouseover'" onmouseout="this.className='btn'" style="width: 80px"/>
+                      <input class="btn" type="button" onclick="changeKD();" value="更改考点" onmousemove="this.className='btnmouseover'" onmouseout="this.className='btn'" style="width: 120px"/>
                   </tr>
                   <tr align="right" id="cancelKd" style="display: none; background-color:#dedefa">
-                    <td colspan="2" class="border"><input class="btn" type="button" onclick="cancelYD();" value="取消预定" onmousemove="this.className='btnmouseover'" onmouseout="this.className='btn'" style="width: 80px"/></td>
+                    <td colspan="2" class="border"><input class="btn" type="button" onclick="gotoURL('pay.php');" value="付款" onmousemove="this.className='btnmouseover'" onmouseout="this.className='btn'" style="width: 120px"/></td>
                   </tr>
                 </table>
                 <span class="redAndBold"> 重要提示：</span>
@@ -721,15 +713,14 @@ ul li {
                   <tr>
                     <td width="423" class="border"><table id="payTable" width="90%" border="0" align="center">
                         <tr style="display: none;">
-                          <td><input class="btn" type="button" onclick="gotoURL('info.php')" value="填写报名表并付款" onmousemove="this.className='btnmouseover'" onmouseout="this.className='btn'" style="width: 120px"/></td>
+                          <td></td>
                           <td>&nbsp;</td>
                         </tr>
                         <tr style="display: none;">
-                          <td><input class="btn" type="button" onclick="gotoURL('info.php')" value="重新填写报名表" onmousemove="this.className='btnmouseover'" onmouseout="this.className='btn'" style="width: 120px"/></td>
-                          <td><input class="btn" type="button" onclick="gotoURL('pay.php')" value="付款" onmousemove="this.className='btnmouseover'" onmouseout="this.className='btn'" style="width: 120px"/></td>
+                          <td></td>
                         </tr>
                         <tr style="display: none;">
-                          <td><input class="btn" type="button" onclick="gotoURL('info.php')" onmousemove="this.className='btnmouseover'" onmouseout="this.className='btn'" value="重新填写报名表" style="width: 120px"/></td>
+                          <td></td>
                           <td>&nbsp;</td>
                         </tr>
                       </table></td>

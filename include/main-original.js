@@ -471,7 +471,7 @@ function getKDInfo() {
             var kdInfo = $A(jsonObj);
             var kdTable = $("kdTable");
             var tbody = kdTable.getElementsByTagName("tbody")[0];
-            var kdInfoURLTemplate = new Template("<a href='javascript:showkdinfo(#{kdid})'><strong>#{kdmc}</strong></a>");
+            var kdInfoURLTemplate = new Template("<strong>#{kdmc}</strong>");
             var ySelectBtnTemplate = new Template("<input type='button' class='btn'  onclick=\"bookseat('chooseaddrForm',#{kdid},'#{kdmc}')\" onmousemove=\"this.className='btnmouseover'\" onmouseout=\"this.className='btn'\" style=\"width:60px\" value='预 定'/>");
             var nSelectBtn = '<input type="button" class="btn disabled" disabled="true" style="width:60px" value="预 定"/>';
             var trs = $A(kdTable.getElementsByTagName("tr"));
@@ -667,7 +667,7 @@ function getKsStatus() {
     cache.redo = getKsStatus;
     cache.cancel = null;
     var b = layer.getElementsBySelector("[name='msg']")[0];
-    var a = new Template("<a href='javascript:showkdinfo(#{kdid})'>#{kdmc}</a>");
+    var a = new Template("#{kdmc}");
     new Ajax.Request(getURL("server/status.php"), {
         method: "post",
         requestHeaders: {

@@ -6,7 +6,7 @@ header("Content-type:application/json");
 $user = array(
 	'canBook' => false,
 	'remains' => 1,
-	'ksTime' => "2011年7月3日 下午1点",
+	'ksTime' => "2011年12月3日 下午1点",
 	'status' => 2,
 	'bkkdmc' => "大连大学",
 	'bkjb' => 2,

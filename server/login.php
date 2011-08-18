@@ -27,6 +27,11 @@ if($userinfoDao->isPasswordWrong($ksIDNO, $ksPwd)){
 $userinfos = $userinfoDao->getUserinfo($ksIDNO, $ksPwd);
 $userinfo = $userinfos[0];
 
+$ksImgSrc = '';
+if(isset($userinfo['ksimgsrc'])){
+	$ksImgSrc = 'source/' . $userinfo['ksimgsrc'];
+}
+
 $user = array(
 	'remains' => 1,
 	'payed' => false,
@@ -34,7 +39,7 @@ $user = array(
 	'bkjb' => $userinfo['wishjb'],
 	'ksXing' => $userinfo['ksxing'],
 	'bkkd' => 1,
-	'ksImgSrc' => 'source/' . $userinfo['ksimgsrc'],//'http://dp.etest.net.cn/result/JLPT/5/70/MqpCXFbxHYZCXqMyPOJekPbkXjVZWlDY.jpg',
+	'ksImgSrc' => $ksImgSrc,//'http://dp.etest.net.cn/result/JLPT/5/70/MqpCXFbxHYZCXqMyPOJekPbkXjVZWlDY.jpg',
 	'ksLoginFlag' => '2fNBvoeDvkXzdkbNqpgDyrYCiElHft0E',
 	'ksMing' => $userinfo['ksming'],
 	'ksPXing' => $userinfo['kspxing'],
