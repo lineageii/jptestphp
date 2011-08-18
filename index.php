@@ -201,8 +201,7 @@ div.plus {
   <script type="text/javascript">
 
    function GetDomain() {
-
-	if ((new RegExp("\.net\.cn")).test(window.location.href.toLowerCase())) {
+	if ((new RegExp("\.net")).test(window.location.href.toLowerCase())) {
 
 		return "net.cn";
 
