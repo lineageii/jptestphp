@@ -21,3 +21,7 @@ KsIdNoTypeName[2]='护照';
 KsIdNoTypeName[3]='军人证件';
 KsIdNoTypeName[4]='台湾居民往来大陆通行证';
 KsIdNoTypeName[5]='港澳居民身份证/往来内地通行证';
+
+var TiaojiName = new Array();
+TiaojiName['y'] = '同意';
+TiaojiName['n'] = '不同意';

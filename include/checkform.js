@@ -156,7 +156,7 @@ function regeditClick(c) {
         c.year.focus();
         return false
     }
-    if (c.userqh.value == "") {
+   /** if (c.userqh.value == "") {
         alert("请输入区号.");
         c.userqh.focus();
         return false
@@ -183,7 +183,8 @@ function regeditClick(c) {
         c.usertel.focus();
         return false
     }
-    c.ksTel.value = c.userqh.value + "-" + c.usertel.value;
+    */
+    //c.ksTel.value = c.userqh.value + "-" + c.usertel.value;
     puredigit = new RegExp("[^0-9]");
     if (c.ksMobile.value == "" || puredigit.test(c.ksMobile.value)) {
         alert("手机号码请输入数字.");
@@ -210,16 +211,18 @@ function regeditClick(c) {
         c.wishjb.focus();
         return false
     }
-    if (c.wishProvince.value == "") {
+    if (c.province.value == "") {
         alert("请输入您的报考意向:考点所在的省份");
-        c.selectProvince.focus();
+        c.province.focus();
         return false
     }
+    /**
     if (c.wishCity.value == "") {
         alert("请输入您的报考意向:考点所在的城市");
         c.selectCity.focus();
         return false
     }
+    
     if (c.ksJzProvice.value == "") {
         alert("请输入您的报考意向:现居住省份");
         c.ksJzProvice.focus();
@@ -230,6 +233,7 @@ function regeditClick(c) {
         c.ksJzCity.focus();
         return false
     }
+    */
     if (!c.guarantee.checked) {
         alert("您必须保证信息的真实和准确.");
         c.guarantee.focus();
@@ -389,15 +393,16 @@ function getAllMSG(a) {
     b += "\t出生日期:\t" + a.ksCsrq.value + "\n";
     b += "\t密码提示问题:\t" + a.ksRemind.value + "\n";
     b += "\t提示问题答案:\t" + a.ksRemindAnswer.value + "\n";
-    b += "\t电话号码:\t" + a.ksTel.value + "\n";
     b += "\t手机号码:\t" + a.ksMobile.value + "\n";
     if (a.ksEmail.value != "") {
         b += "\tEMail:\t\t" + a.ksEmail.value + "\n"
     }
     b += "\t首选考试级别:\t" + LevelName[a.wishjb.value] + "\n";
-    b += "\t首选考点城市:\t" + a.wishProvince.value + "-" + a.wishCity.value + "\n";
-    b += "\t现居住省份：\t" + a.ksJzProvice.value + "\n";
-    b += "\t现居住城市：\t" + a.ksJzCity.value + "\n";
+    b += "\t首选考点省份:\t" + a.province.value + "\n";
+    b += "\t第一志愿考点：\t" + a.selectCity1.value + "\n";
+    b += "\t第二志愿考点：\t" + a.selectCity2.value + "\n";
+    b += "\t第三志愿考点：\t" + a.selectCity3.value + "\n";
+    b += "\t省内调剂：\t" + TiaojiName[a.tiaoji.value] + "\n";
     b += "**************************************************************\n\n";
     b += "以上是你填写的注册信息.\n请仔细核对,确认无误后,点击【确定】提交,点击【取消】修改.\n";
     return b
