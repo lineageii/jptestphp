@@ -25,7 +25,7 @@ require_once 'yeepay/yeepaycommon.php';
 <head>
 <title>To YeePay Page</title>
 </head>
-<body>
+<body onload="document.yeepay.submit();">
 <form id="order-pay-form" name="yeepay" method="post" action="https://www.yeepay.com/app-merchant-proxy/node" >
 	<input type='hidden' name='p0_Cmd' value='<?php echo $p0_Cmd ?>'>
 	<input type='hidden' name='p1_MerId' value='<?php echo $p1_MerId ?>'>
@@ -41,7 +41,6 @@ require_once 'yeepay/yeepaycommon.php';
 	<input type='hidden' name='pd_FrpId' value='<?php echo $pd_FrpId ?>'>
 	<input type='hidden' name='pr_NeedResponse' value='<?php echo $pr_NeedResponse ?>'>
 	<input type='hidden' name='hmac' value='<?php echo $hmac ?>'>
-	<input type="submit" value="付款" />
 </form>
 </body>
 </html>
