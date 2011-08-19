@@ -695,7 +695,7 @@ ul li {
                       <input class="btn" type="button" onclick="changeKD();" value="更改考点" onmousemove="this.className='btnmouseover'" onmouseout="this.className='btn'" style="width: 120px"/>
                   </tr>
                   <tr align="right" id="cancelKd" style="display: none; background-color:#dedefa">
-                    <td colspan="2" class="border"><input class="btn" type="button" onclick="gotoURL('pay.php');" value="付款" onmousemove="this.className='btnmouseover'" onmouseout="this.className='btn'" style="width: 120px"/></td>
+                    <td colspan="2" class="border"><input class="btn" type="button" onclick="gotoURL('server/pay.php');" value="付款" onmousemove="this.className='btnmouseover'" onmouseout="this.className='btn'" style="width: 120px"/></td>
                   </tr>
                 </table>
                 <span class="redAndBold"> 重要提示：</span>
