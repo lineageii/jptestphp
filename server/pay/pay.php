@@ -4,8 +4,8 @@ require_once 'yeepay/yeepaycommon.php';
 
 	$p0_Cmd = 'Buy';
 	$p1_MerId = $yeepay_i['mid'];
-	$p2_Order = strval($_REQUEST['order_id']);;
-	$p3_Amt = strval($_REQUEST['money']);
+	$p2_Order = $_REQUEST['order_id'];
+	$p3_Amt = $_REQUEST['money'];
 	$p4_Cur = "CNY";
 	$p5_Pid = "JLPT";
 	$p6_Pcat = '';
@@ -13,7 +13,7 @@ require_once 'yeepay/yeepaycommon.php';
 	$p8_Url = $system_i['wwwprefix'] . '/server/pay/yeepay/callback.php';
 	$p9_SAF = '0';
 	$pa_MP = '';
-	$pd_FrpId = strval($_REQUEST['paytype']);
+	$pd_FrpId = $_REQUEST['paytype'];
 	$pr_NeedResponse = '1';
 	$merchantKey = $yeepay_i['sec'];
 
