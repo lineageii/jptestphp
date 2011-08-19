@@ -22,6 +22,16 @@
 			'dbname'   => 'phptest'
 	);
 	
+	// yeepay Info
+	$yeepay_i = array(
+		'mid' => '10011211946',
+		'sec' => 'Cu89o8258VjS6496U1e972C52K20a9wmKMd14H7vllz9Jx725K6265902sH3'
+	);
+	
+	$system_i = array(
+		'wwwprefix' => 'http://jptest.net'
+	);
+	
 	// Log Info
 	$log_i = array(
 		'enabled'		=> 1,

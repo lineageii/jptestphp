@@ -417,3 +417,38 @@ table .tdname {
 	padding: 0;
 	vertical-align: middle;
 }
+
+/* paybank */
+#paybank{ margin-left: 16px; }
+#paybank p{ width: 180px; height:20px; float:left ; margin:15px 0px 10px 0px;}
+#paybank p input{ float:left; margin-top: 15px; }
+#paybank p label{ float:left; height:25px; margin-top:15px; padding-left:150px; }
+#paybank p .cmb{ background:url(../images/icon_zsyh_s.gif) no-repeat 10px 0px; }
+#paybank p .icbc{ background:url(../images/icon_zggsyh_s.gif) no-repeat 10px 0px; }
+#paybank p .ccb{ background:url(../images/icon_ccb_s.gif) no-repeat 10px 0px; } 
+#paybank p .abc{ background:url(../images/icon_abc_s.gif) no-repeat 10px 0px; }
+#paybank p .spdb{ background:url(../images/icon_spdb_s.gif) no-repeat 10px 0px; }
+#paybank p .bofc{ background:url(../images/icon_bofc_s.gif) no-repeat 10px 0px; }
+#paybank p .citic{ background:url(../images/icon_itic_s.gif) no-repeat 10px 0px;}
+#paybank p .cib{ background:url(../images/icon_cib_s.gif) no-repeat 10px 0px; }
+#paybank p .gdb{ background:url(../images/icon_gdb_s.gif) no-repeat 10px 0px; }
+#paybank p .sdb{ background:url(../images/icon_sdb_s.gif) no-repeat 10px 0px; }
+#paybank p .cebb{ background:url(../images/icon_cebb_s.gif) no-repeat 10px 0px; }
+#paybank p .bob{ background:url(../images/icon_bob_s.gif) no-repeat 10px 0px; }
+#paybank p .pingan{ background:url(../images/icon_pingan_s.gif) no-repeat 10px 0px; }
+#paybank p .cmbc{ background:url(../images/icon_cmbc_s.gif) no-repeat 10px 0px; }
+#paybank p .comm{ background:url(../images/icon_comm_s.gif) no-repeat 10px 0px; }
+/* End */
+
+.clear {
+	clear:both;
+}
+
+.check-act{
+	margin-top: 32px;
+	padding-left:16px;
+}
+
+.order-pay-credit p {
+	padding:12px 16px;
+}

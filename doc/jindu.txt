@@ -23,3 +23,5 @@ main-register-o.js.confirmreg
 
 220183198910182688
 miyagi
+
+2011/08/18
