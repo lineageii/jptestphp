@@ -101,9 +101,5 @@ document.include = function (h, j, b, g) {
 };
 
 function gotoHomepage() {
-    if ((new RegExp(".net.cn")).test(window.location.href.toLowerCase())) {
-        window.location.href = "http://www.etest.net.cn";
-        return
-    }
-    window.location.href = "http://www.etest.edu.cn"
+    window.location.href = "http://jptest.net";
 };

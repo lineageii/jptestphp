@@ -1,8 +1,10 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+<title>日语考试网_日本语能力测试网上报名系统</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>教育部考试中心---日本语能力测试网上报名系统</title>
+<meta name="keywords" content="日语报名，日语代报名，日语N1/N2/N3/N4/N5考试报名，日语一级/二级/三级/四级/五级考试报名，日语学习,学日语,日语能力考,日语考试"/>
+<meta name="description" content="日语考试网，专注日语考前冲刺，考前复习，提供代报名服务，提供日语历年真题下载，真题解析服务。"/>
 <link href="include/style.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript">
 
@@ -216,11 +218,7 @@ div.plus {
 </script>
   <div class="topper"><span id="etesthomepage"><a
 
-	href="javascript:gotoHomepage();">教育部考试中心海外考试报名信息网</a> &gt;&gt;</span><span
-
-	id="dns"> <a href="http://jlpt.etest.edu.cn">教育网用户</a> | <a
-
-	href="http://jlpt.etest.net.cn">公网用户</a> </span></div>
+	href="javascript:gotoHomepage();">教育部考试中心海外考试报名信息网</a> &gt;&gt;</span></div>
   <div class="header"><img src="images/banner.jpg" alt="NEEA"
 
 	width="780px" /></div>
@@ -333,7 +331,7 @@ ul li {
     </div>
     <div class="indexcontent">
       <h1>重要通知</h1>
-	  <iframe width="400px" height="360px" frameborder="0" id="newsFrame" src="http://news.etest.net.cn/JLPT/1/newslist.htm" scrolling="no"></iframe>
+	  <iframe width="400px" height="360px" frameborder="0" id="newsFrame" src="newslist.htm" scrolling="no"></iframe>
     </div>
   </div>
   <div id="uploadPicDiv" style="display: none;">
@@ -733,7 +731,7 @@ ul li {
     </table>
   </div>
   <div class="footer">
-    <div><a href="javascript:gotoHomepage();" target="_self">ETEST首页</a> | <a href="contact.html" target="_blank">联系我们</a></div>
+    <div><a href="javascript:gotoHomepage();" target="_self">JPTEST首页</a> | <a href="contact.html" target="_blank">联系我们</a></div>
     <div id="copyright">Copyright &copy; 2011
       
       by NEEA. All Rights Reserved. 教育部考试中心 版权所有</div>
