@@ -219,7 +219,7 @@ div.plus {
   <div class="topper"><span id="etesthomepage"><a
 
 	href="javascript:gotoHomepage();">教育部考试中心海外考试报名信息网</a> &gt;&gt;</span></div>
-  <div class="header"><img src="images/banner.jpg" alt="NEEA"
+  <div class="header"><img src="images/banner.jpg" alt="日语考试网_日语报名系统"
 
 	width="780px" /></div>
   <div class="navBar">
@@ -323,7 +323,7 @@ ul li {
             </tr>
             <tr>
               <td></td>
-              <td><p>请 <strong><a href="qryscore.jsp" class="redAndBold">点这里</a> </strong>进入2010年12月成绩查询</p></td>
+              <td></td>
             </tr>
           </table>
         </form>

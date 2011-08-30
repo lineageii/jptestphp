@@ -14,7 +14,7 @@ $userinfos = $userinfoDao->getUserinfoByKsid($ksid);
 $userinfo = $userinfos[0];
 
 
-if(isset($userinfo['ksimgsrc'])) {
+if($userinfo['ksimgsrc'] != '' && $userinfo['ksimgsrc'] != NULL) {
 	$json = array(
 	'hasPhoto' => 1,
 	'photoSrc' => 'source/'. $userinfo['ksimgsrc']

@@ -9,6 +9,7 @@ $return = getCallBackValue($r0_Cmd,$r1_Code,$r2_TrxId,$r3_Amt,$r4_Cur,$r5_Pid,$r
 
 $bRet = CheckHmac($r0_Cmd,$p1_MerId,$r1_Code,$r2_TrxId,$r3_Amt,$r4_Cur,$r5_Pid,$r6_Order,$r7_Uid,$r8_MP,$r9_BType,$hmac,$merchantKey);
 
+$userinfoDao = DAO::getDAO('UserinfoDAO');
 
 if($bRet){
 	if($r1_Code=="1"){
@@ -18,6 +19,9 @@ if($bRet){
 			$currency = 'CNY';
 			$service = 'yeepay';
 			$bank ='易宝';
+			
+			$userinfoDao->paySuccess($r6_Order, $r3_Amt);
+			
 			//ZOrder::OnlineIt($order_id, $r6_Order, $r3_Amt, $currency, $service, $bank);
 			header("Location:" . BASE . "/index.php");
 
@@ -29,7 +33,7 @@ if($bRet){
 			$currency = 'CNY';
 			$service = 'yeepay';
 			$bank = '易宝';
-
+			$userinfoDao->paySuccess($r6_Order, $r3_Amt);
 			//ZOrder::OnlineIt($order_id, $r6_Order, $r3_Amt, $currency, $service, $bank);
 			//redirect(WEB_ROOT . "/order/pay.php?id={$order_id}");
 			ob_end_clean();

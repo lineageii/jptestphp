@@ -28,7 +28,7 @@ $userinfos = $userinfoDao->getUserinfo($ksIDNO, $ksPwd);
 $userinfo = $userinfos[0];
 
 $ksImgSrc = '';
-if(isset($userinfo['ksimgsrc'])){
+if($userinfo['ksimgsrc'] != '' && $userinfo['ksimgsrc'] != NULL){
 	$ksImgSrc = 'source/' . $userinfo['ksimgsrc'];
 }
 

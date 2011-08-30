@@ -64,5 +64,15 @@ class UserinfoDAO extends BaseDAO
 		}
 		return null;
 	}
+	
+	/**
+	 * 
+	 * 付款成功，更新用户表字段paymoney
+	 * @param  $ksidno, $paymoney
+	 */
+	public function paySuccess($ksidno, $paymoney) {
+		$paramArr = array(':ksidno'=>$ksidno, ':paymoney'=>$paymoney);
+		return $this->update('paymoney = :paymoney where ksidno = :ksidno', $paramArr);
+	}
 }
 

@@ -29,7 +29,8 @@
 	);
 	
 	$system_i = array(
-		'wwwprefix' => 'http://jptest.net'
+		'wwwprefix' => 'http://jptest.net',
+		'phase' => '201112'
 	);
 	
 	// Log Info

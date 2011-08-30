@@ -83,7 +83,7 @@
 
 			<div class="clear"></div>
 			<p class="check-act">
-				<input type="hidden" name="order_id" value="22" />
+				<input type="hidden" name="order_id" value="221s" />
 				<input type="hidden" name="quantity" value="1" /> 
 				<input type="hidden" name="money" value="100"/>
 				<input type="submit" value="确认订单，付款" class="formbutton" />
