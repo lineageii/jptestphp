@@ -1,6 +1,7 @@
 <?php
 defined('BASE') or exit('Direct script access is not allowed!');
-require_once BASE.'/server/model/base/BaseDAO.php';
+require_once BASE . '/includes.php';
+require_once BASE . '/server/model/base/BaseDAO.php';
 
 class UserinfoDAO extends BaseDAO
 {
@@ -15,8 +16,9 @@ class UserinfoDAO extends BaseDAO
 	 * @return boolean
 	 */
 	public function isExistedKsIDNO($ksIDNO) {
+		global $system_i;
 		if ($this->dbh == null) return;
-		$sql = 'SELECT COUNT(1) CONT FROM userinfo WHERE ksidno = :ksidno';
+		$sql = "SELECT COUNT(1) CONT FROM userinfo WHERE ksidno = :ksidno and phase = '" . $system_i['phase'] ."'";
 		$stmt = $this->dbh->prepare($sql);
 		$stmt->bindParam(':ksidno', $ksIDNO);
 		$stmt->execute();
@@ -35,7 +37,8 @@ class UserinfoDAO extends BaseDAO
 	 * @return boolean
 	 */
 	public function isPasswordWrong($ksIDNO, $ksPwd){
-		$sql = 'SELECT * FROM userinfo WHERE ksidno = :ksidno and kspwd = :kspwd';
+		global $system_i;
+		$sql = "SELECT * FROM userinfo WHERE ksidno = :ksidno and kspwd = :kspwd and phase = '" . $system_i['phase'] ."'";
 		$paramArr = array(':ksidno'=>$ksIDNO,':kspwd'=>$ksPwd);
 		$stmt = $this->prepareExecute($sql, $paramArr);
 		if ($stmt && $stmt->rowCount() > 0) {
@@ -46,7 +49,8 @@ class UserinfoDAO extends BaseDAO
 	}
 	
 	public function getUserinfo($ksIDNO, $ksPwd) {
-		$sql = 'SELECT * FROM userinfo WHERE ksidno = :ksidno and kspwd = :kspwd';
+		global $system_i;
+		$sql = "SELECT * FROM userinfo WHERE ksidno = :ksidno and kspwd = :kspwd and phase = '" . $system_i['phase'] ."'";
 		$paramArr = array(':ksidno'=>$ksIDNO,':kspwd'=>$ksPwd);
 		$stmt = $this->prepareExecute($sql, $paramArr);
 		if ($stmt && $stmt->rowCount() > 0) {
@@ -65,14 +69,27 @@ class UserinfoDAO extends BaseDAO
 		return null;
 	}
 	
+	public function getUserinfoByKsidno($ksidno) {
+		global $system_i;
+		$sql = "SELECT * FROM userinfo WHERE ksidno = :ksidno and phase = '" . $system_i['phase'] ."'";
+		$paramArr = array(':ksidno'=>$ksidno);
+		$stmt = $this->prepareExecute($sql, $paramArr);
+		if ($stmt && $stmt->rowCount() > 0) {
+			return $stmt->fetchAll();
+		}
+		return null;
+	}
+	
+	
 	/**
 	 * 
 	 * 付款成功，更新用户表字段paymoney
 	 * @param  $ksidno, $paymoney
 	 */
 	public function paySuccess($ksidno, $paymoney) {
+		global $system_i;
 		$paramArr = array(':ksidno'=>$ksidno, ':paymoney'=>$paymoney);
-		return $this->update('paymoney = :paymoney where ksidno = :ksidno', $paramArr);
+		return $this->update("paymoney = :paymoney where ksidno = :ksidno and phase = '" . $system_i['phase'] ."'", $paramArr);
 	}
 }
 

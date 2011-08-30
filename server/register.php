@@ -75,7 +75,8 @@ try {
 	wishcity2,
 	wishcity3,
 	tiaoji,
-	ksqq
+	ksqq,
+	pwd
 	) values(
 	:ksxing,
 	:ksming,
@@ -101,7 +102,8 @@ try {
 	:wishcity2,
 	:wishcity3,
 	:tiaoji,
-	:ksqq
+	:ksqq,
+	:pwd
 	)';
 	$stmt = $db->prepare($sql);
 	$stmt->bindParam(':ksxing', $ksXing);
@@ -129,6 +131,7 @@ try {
 	$stmt->bindParam(':wishcity3', $wishCity3);
 	$stmt->bindParam(':tiaoji', $tiaoji);
 	$stmt->bindParam(':ksqq', $ksqq);
+	$stmt->bindParam(':pwd', $ksPwd);
 	$db->query("SET NAMES 'utf8'");
 	$stmt->execute();
 	$result = array(

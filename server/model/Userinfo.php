@@ -5,12 +5,14 @@ require_once BASE.'/server/model/base/BaseBO.php';
 /**
  * Auto generated Model Class represents table 'userinfo' 
  * @author: Thin PHP Framework
- * @date: 2011-08-17 06:04
+ * @date: 2011-08-30 10:56
  */
 class Userinfo extends BaseBO
 {
 	private $fields;
 	private $id;
+	private $phase;
+	private $paymoney;
 	private $ksxing;
 	private $ksming;
 	private $kspxing;
@@ -37,6 +39,7 @@ class Userinfo extends BaseBO
 	private $tiaoji;
 	private $ksqq;
 	private $ksimgsrc;
+	private $pwd;
 
 
 	/**
@@ -59,6 +62,8 @@ class Userinfo extends BaseBO
 	{
 		$this->fields = $fields;
 		if (isset($fields['id'])) $this->id = $fields['id'];
+		if (isset($fields['phase'])) $this->phase = $fields['phase'];
+		if (isset($fields['paymoney'])) $this->paymoney = $fields['paymoney'];
 		if (isset($fields['ksxing'])) $this->ksxing = $fields['ksxing'];
 		if (isset($fields['ksming'])) $this->ksming = $fields['ksming'];
 		if (isset($fields['kspxing'])) $this->kspxing = $fields['kspxing'];
@@ -85,6 +90,7 @@ class Userinfo extends BaseBO
 		if (isset($fields['tiaoji'])) $this->tiaoji = $fields['tiaoji'];
 		if (isset($fields['ksqq'])) $this->ksqq = $fields['ksqq'];
 		if (isset($fields['ksimgsrc'])) $this->ksimgsrc = $fields['ksimgsrc'];
+		if (isset($fields['pwd'])) $this->pwd = $fields['pwd'];
 	
 	}
 
@@ -99,6 +105,22 @@ class Userinfo extends BaseBO
 	public function setId($id) {
 		$this->fields['id'] = $id;
 		$this->id = $id;
+	}
+
+	public function getPhase() {
+		return $this->phase;
+	}
+	public function setPhase($phase) {
+		$this->fields['phase'] = $phase;
+		$this->phase = $phase;
+	}
+
+	public function getPaymoney() {
+		return $this->paymoney;
+	}
+	public function setPaymoney($paymoney) {
+		$this->fields['paymoney'] = $paymoney;
+		$this->paymoney = $paymoney;
 	}
 
 	public function getKsxing() {
@@ -309,6 +331,14 @@ class Userinfo extends BaseBO
 		$this->ksimgsrc = $ksimgsrc;
 	}
 
+	public function getPwd() {
+		return $this->pwd;
+	}
+	public function setPwd($pwd) {
+		$this->fields['pwd'] = $pwd;
+		$this->pwd = $pwd;
+	}
+
 
 
 	/**
@@ -316,6 +346,6 @@ class Userinfo extends BaseBO
 	 */
 	public function toStr()
 	{
-		return ''.':'.$this->id.':'.$this->ksxing.':'.$this->ksming.':'.$this->kspxing.':'.$this->kspming.':'.$this->ksxb.':'.$this->year.':'.$this->month.':'.$this->day.':'.$this->ksidtype.':'.$this->ksidno.':'.$this->kspwd.':'.$this->ksremind.':'.$this->ksremindanswer.':'.$this->userqh.':'.$this->usertel.':'.$this->kstel.':'.$this->ksmobile.':'.$this->ksemail.':'.$this->wishjb.':'.$this->wishprovince.':'.$this->wishcity1.':'.$this->wishcity2.':'.$this->wishcity3.':'.$this->tiaoji.':'.$this->ksqq.':'.$this->ksimgsrc;
+		return ''.':'.$this->id.':'.$this->phase.':'.$this->paymoney.':'.$this->ksxing.':'.$this->ksming.':'.$this->kspxing.':'.$this->kspming.':'.$this->ksxb.':'.$this->year.':'.$this->month.':'.$this->day.':'.$this->ksidtype.':'.$this->ksidno.':'.$this->kspwd.':'.$this->ksremind.':'.$this->ksremindanswer.':'.$this->userqh.':'.$this->usertel.':'.$this->kstel.':'.$this->ksmobile.':'.$this->ksemail.':'.$this->wishjb.':'.$this->wishprovince.':'.$this->wishcity1.':'.$this->wishcity2.':'.$this->wishcity3.':'.$this->tiaoji.':'.$this->ksqq.':'.$this->ksimgsrc.':'.$this->pwd;
 	}
 }
